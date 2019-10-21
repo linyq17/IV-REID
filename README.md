@@ -13,9 +13,15 @@ Pytorch Code for Cross-Modality Infrared-Visible Person Re-identification (IV-RE
   - pytorch>=0.4
   - torchvision
   - numpy
+
+
+
 2. Prepare Dataset and pretrained model:
 
-Remember to set your path to the root of the dataset in `data/sysumm.py` and `data/regdb.py` and pretrained model path in config file option `PRETRAIN_PATH`. Download datasets can refer to [here](https://github.com/mangye16/Cross-Modal-Re-ID-baseline#1-prepare-the-datasets)
+Remember to set your path to the root of the dataset in `data/sysumm.py` and `data/regdb.py` and pretrained model path in config file option `PRETRAIN_PATH`. Download datasets can refer to [here](https://github.com/mangye16/Cross-Modal-Re-ID-baseline#1-prepare-the-datasets).
+
+
+
 3. Train
 
   Due to the different evaluation strategy, we offer two train code for different datasets.
@@ -28,6 +34,7 @@ Remember to set your path to the root of the dataset in `data/sysumm.py` and `da
   ```bash
   python ./train_sysumm.py --config ./configs/res50_sysumm_all.ini
   ```
+
 
 4. Test
 
